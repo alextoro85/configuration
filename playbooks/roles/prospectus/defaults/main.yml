@@ -2,10 +2,10 @@
 #
 # edX Configuration
 #
-# github:     https://github.com/edx/configuration
+# github:     https://github.com/openedx/configuration
 # wiki:       https://openedx.atlassian.net/wiki/display/OpenOPS
 # code style: https://openedx.atlassian.net/wiki/display/OpenOPS/Ansible+Code+Conventions
-# license:    https://github.com/edx/configuration/blob/master/LICENSE.TXT
+# license:    https://github.com/openedx/configuration/blob/master/LICENSE.TXT
 #
 ##
 # Defaults for role prospectus
@@ -33,7 +33,7 @@ PROSPECTUS_TEMPORARY_REDIRECTS: []
 
 # task vars
 PROSPECTUS_GIT_IDENTITY: "none"
-prospectus_repo: 'ssh://git@github.com/edx/prospectus.git'
+prospectus_repo: 'ssh://git@github.com/openedx/prospectus.git'
 PROSPECTUS_VERSION: 'master'
 edx_django_service_use_python3: false
 PROSPECTUS_NODE_VERSION:  '16.13.0'

@@ -109,7 +109,7 @@ RUN curl -fSL "$SQOOP_URL" -o /var/tmp/$SQOOP_DIST_FILE \
 
 WORKDIR /var/tmp
 # Edx Hadoop Util Library
-RUN git clone https://github.com/edx/edx-analytics-hadoop-util \
+RUN git clone https://github.com/openedx/edx-analytics-hadoop-util \
     && cd /var/tmp/edx-analytics-hadoop-util \
     && $JAVA_HOME/bin/javac -cp `/edx/app/hadoop/hadoop/bin/hadoop classpath` org/edx/hadoop/input/ManifestTextInputFormat.java \
     && $JAVA_HOME/bin/jar cf /edx/app/hadoop/lib/edx-analytics-hadoop-util.jar org/edx/hadoop/input/ManifestTextInputFormat.class
@@ -123,7 +123,7 @@ RUN chown hadoop:hadoop /etc/bootstrap.sh \
 # Analytics pipeline
 ARG OPENEDX_RELEASE=master
 ENV OPENEDX_RELEASE=${OPENEDX_RELEASE}
-RUN git clone https://github.com/edx/edx-analytics-pipeline \
+RUN git clone https://github.com/openedx/edx-analytics-pipeline \
     && cd edx-analytics-pipeline \
     && git checkout ${OPENEDX_RELEASE} \
     && cd .. \

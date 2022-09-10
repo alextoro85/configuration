@@ -862,7 +862,7 @@ Add any new changes to the top (right below this line).
 
  - 2017-12-06
      - Role: veda_pipeline_worker
-       - New role to run all (`deliver, ingest, youtubecallback`) [video pipeline workers](https://github.com/edx/edx-video-pipeline/blob/master/bin/)
+       - New role to run all (`deliver, ingest, youtubecallback`) [video pipeline workers](https://github.com/openedx/edx-video-pipeline/blob/master/bin/)
 
      - Role: ecomworker
        - Added `ECOMMERCE_WORKER_BROKER_TRANSPORT` with a default value of 'ampq' to be backwards compatible with rabbit.  Set to 'redis' if you wish to use redis instead of rabbit as a queue for ecommerce worker.
@@ -878,7 +878,7 @@ Add any new changes to the top (right below this line).
 
  - 2017-11-29
      - Role: veda_delivery_worker
-       - New role added to run [video delivery worker](https://github.com/edx/edx-video-pipeline/blob/master/bin/deliver)
+       - New role added to run [video delivery worker](https://github.com/openedx/edx-video-pipeline/blob/master/bin/deliver)
 
  - 2017-11-23
        - Added `EDXAPP_DEFAULT_COURSE_VISIBILITY_IN_CATALOG` setting (defaults to `both`).
@@ -950,7 +950,7 @@ Add any new changes to the top (right below this line).
          common options to the content store anymore.
  - 2017-10-19
      - Role: veda_web_frontend
-       - New role added for [edx-video-pipeline](https://github.com/edx/edx-video-pipeline)
+       - New role added for [edx-video-pipeline](https://github.com/openedx/edx-video-pipeline)
 
  - 2017-10-07
      - Role: discovery
@@ -1205,7 +1205,7 @@ Add any new changes to the top (right below this line).
        - Added `EDXAPP_CELERY_BROKER_USE_SSL` to allow configuring celery to use TLS.
  - 2017-02-24
      - Role: programs
-       - This role has been removed as this service is no longer supported. The role is still available on the [Ficus branch](https://github.com/edx/configuration/releases/tag/open-release%2Fficus.1).
+       - This role has been removed as this service is no longer supported. The role is still available on the [Ficus branch](https://github.com/openedx/configuration/releases/tag/open-release%2Fficus.1).
  - 2017-02-16
      - Role: mongo_2_6
        - Added `MONGO_AUTH` to turn authentication on/off. Auth is now enabled by default, and was previously disabled by default.
@@ -1220,7 +1220,7 @@ Add any new changes to the top (right below this line).
        - Support parsing the replset JSON in 3.2 and 3.0
 
      - Role: ecommerce
-       - Removed `SEGMENT_KEY` which is no longer used.  Segment key is now defined in DB configuration. (https://github.com/edx/ecommerce/pull/1121)
+       - Removed `SEGMENT_KEY` which is no longer used.  Segment key is now defined in DB configuration. (https://github.com/openedx/ecommerce/pull/1121)
  - 2017-02-01
 
      - Role: ecommerce
@@ -1347,8 +1347,8 @@ Add any new changes to the top (right below this line).
 
  - 2015-05-27
      - Role: edxapp
-       - Removed deprecated variables EDXAPP_PLATFORM_TWITTER_URL, EDXAPP_PLATFORM_MEETUP_URL, EDXAPP_PLATFORM_LINKEDIN_URL, and EDXAPP_PLATFORM_GOOGLE_PLUS_URL in favor of EDXAPP_SOCIAL_MEDIA_FOOTER_URLS.  These variables haven't been used in edx-platform since March 17, 2015 (when https://github.com/edx/edx-platform/pull/7383 was merged).  This change is backwards incompatible with versions of edx-platform from before March 17, 2015.
-       - Added EDXAPP_MOBILE_STORE_URLS and EDXAPP_FOOTER_ORGANIZATION_IMAGE variables, used in https://github.com/edx/edx-platform/pull/8175 (v3 version of the edx.org footer).
+       - Removed deprecated variables EDXAPP_PLATFORM_TWITTER_URL, EDXAPP_PLATFORM_MEETUP_URL, EDXAPP_PLATFORM_LINKEDIN_URL, and EDXAPP_PLATFORM_GOOGLE_PLUS_URL in favor of EDXAPP_SOCIAL_MEDIA_FOOTER_URLS.  These variables haven't been used in edx-platform since March 17, 2015 (when https://github.com/openedx/edx-platform/pull/7383 was merged).  This change is backwards incompatible with versions of edx-platform from before March 17, 2015.
+       - Added EDXAPP_MOBILE_STORE_URLS and EDXAPP_FOOTER_ORGANIZATION_IMAGE variables, used in https://github.com/openedx/edx-platform/pull/8175 (v3 version of the edx.org footer).
 
 
        - We now remove the default syslog.d conf file (50-default.conf) this will
@@ -1475,7 +1475,7 @@ Add any new changes to the top (right below this line).
  - 2014-05-28
      - Role: Edxapp
        - The repo.txt requirements file is no longer being processed in anyway.  This file was removed from edxplatform
-         via pull #3487(https://github.com/edx/edx-platform/pull/3487)
+         via pull #3487(https://github.com/openedx/edx-platform/pull/3487)
 
  - 2014-05-19
 
